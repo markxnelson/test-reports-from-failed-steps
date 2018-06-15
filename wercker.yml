@@ -5,10 +5,10 @@ build:
     - script:
       name: good one
       code: |
-        touch $WERCKER_REPORT_ARTIFACT_DIR/good
+        touch $WERCKER_REPORT_ARTIFACTS_DIR/good
     - script:
       name: bad one
       code: |
-        touch $WERCKER_REPORT_ARTIFACT_DIR/bad
+        touch $WERCKER_REPORT_ARTIFACTS_DIR/bad
         exit
 
