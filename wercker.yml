@@ -12,5 +12,5 @@ build:
         cat > $WERCKER_REPORT_ARTIFACTS_DIR/message.txt << EOF
         this is a message
         EOF
-        
+        exit
 
