@@ -9,7 +9,7 @@ build:
     - script:
       name: bad one
       code: |
-        cat $WERCKER_REPORT_ARTIFACTS_DIR/message.txt << EOF
+        cat > $WERCKER_REPORT_ARTIFACTS_DIR/message.txt << EOF
         this is a message
         EOF
         exit
