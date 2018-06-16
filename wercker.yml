@@ -12,5 +12,7 @@ build:
         cat > $WERCKER_REPORT_ARTIFACTS_DIR/message.txt << EOF
         this is a message
         EOF
-        exit
+        ls -al $WERCKER_REPORT_ARTIFACTS_DIR
+        cat $WERCKER_REPORT_ARTIFACTS_DIR/message.txt
+        return 99
 
